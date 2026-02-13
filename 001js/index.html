@@ -5,20 +5,25 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ficha do Guerreiro</title>
     <style>
+        * {
+            padding: 0px;
+            margin: 0px;
+            box-sizing: border-box;
+        }
         body {
-            font-family: Arial, Helvetica, sans-serif;
-            font-size: 2em;
-            background-color: #4d4b4b;
-            color: white;
-            text-align: center;
-            
+           width: 100%;
+           height: 100vh;
+           background-color: grey;
+           display: flex;
+           align-items: center;
+           justify-content: center;
         }
         .amor {
-            border: 2px solid black;
-            border-radius: 10px;
             width: 500px;
             height: 500px;
-            padding: auto;
+            background-color: white;
+            text-align: center;
+            font-family: Arial, Helvetica, sans-serif;
 
         }
        
@@ -31,7 +36,7 @@
         
         <script>
              let nome = window.prompt('Digite o nome do seu personagem:');
-                   let poder = window.prompt('Qual é p poder principal dele');
+                   let poder = window.prompt('Qual é o poder principal dele');
                         let totalLetras = nome.length + poder.length;
                         document.write(`O personagem <strong>${nome}</strong> detém o poder de ${poder}!<br/>`);
                   document.write(`ATAQUE ESPECIAL: ${poder.toUpperCase()}!!! <br/>`);
