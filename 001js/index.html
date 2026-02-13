@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ficha do Guerreiro</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 2em;
+            background-color: #4d4b4b;
+            color: white;
+            text-align: center;
+            
+        }
+        .amor {
+            border: 2px solid black;
+            border-radius: 10px;
+            width: 500px;
+            height: 500px;
+            padding: auto;
+
+        }
+       
+    </style>
+</head>
+<body>
+    <div class="amor">
+        <h1>Bem Vindos</h1>
+        <h2>Ao Cadastra Guerreiros</h2>
+        
+        <script>
+             let nome = window.prompt('Digite o nome do seu personagem:');
+                   let poder = window.prompt('Qual é p poder principal dele');
+                        let totalLetras = nome.length + poder.length;
+                        document.write(`O personagem <strong>${nome}</strong> detém o poder de ${poder}!<br/>`);
+                  document.write(`ATAQUE ESPECIAL: ${poder.toUpperCase()}!!! <br/>`);
+            document.write(`Nível de complexidade (Total de letras): ${totalLetras}`);
+    
+    </script>
+    </div>
+</body>
+</html>
