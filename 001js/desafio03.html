@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora de Média</title>
+    <style>
+        * {
+            margin: 0px;
+            padding: 0px;
+              box-sizing: border-box;
+        }
+        body {
+            background-color: #2a3e43;
+            color: white;
+            display: flex;
+             align-items: center;
+           justify-content: center;
+        }
+        h1 {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+    </style>
+</head>
+<body>
+    <h1>Media final</h1>
+    
+
+    <script>
+        var nome = window.prompt('Qual é o nome do aluno?') // pergunta o nome.
+
+        var n1 = Number(window.prompt('Digite a primeira nota: ')) //pergunta a nota.
+
+        var n2 = Number(window.prompt('Digite a segunda nota: ')) //pergunta a nota.
+
+        var media = (n1 + n2) // calcula n1+n2, nota final.
+
+        window.alert (`A média do aluno ${nome} é igual a ${media}`) // aparece para o cliente o valor final informado.
+    </script>
+</body>
+</html>
