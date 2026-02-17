@@ -4,18 +4,47 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Crachá de Identificação</title>
+    <style>
+        * {
+            margin: 0px;
+            padding: 0px;
+            box-sizing: border-box;
+        }
+        body {
+         height: 100vh; /* Ocupa 100% da altura da tela */
+            margin: 0;     /* Remove as margens padrão do navegador */
+            
+            /* A MÁGICA DO FLEXBOX: */
+            display: flex;
+            justify-content: center; /* Centraliza no meio da linha (Horizontal) */
+            align-items: center;     /* Centraliza no meio da altura (Vertical) */
+            
+            background-color: #2c3e50; /* Uma cor de fundo escura */
+            font-family: Arial, sans-serif;
+        }
+        .content {
+            background-color: white;
+            padding: 40px;          /* Espaço interno */
+            border-radius: 15px;    /* Bordas arredondadas */
+            box-shadow: 0 10px 25px rgba(0,0,0,0.5); /* Sombra para dar destaque */
+            text-align: center;     /* Centraliza o texto DENTRO da caixa */
+            width: 300px;  }         /* Largura fixa para ficar bonito */
+    </style>
 </head>
 <body>
 
     
-    <script>
+   <div class="content">
+       <script>
+       
         var nome = window.prompt('Nome do usuário')
-        var sobrenome = window.prompt('Sobrenome do usuário')
+            var sobrenome = window.prompt('Sobrenome do usuário')
 
-        document.write(`Boas-vindas  <strong>${nome} ${sobrenome}</strong> <br/> `)
-        document.write(`Nome do crachá: ${sobrenome.toUpperCase()} <br/>`)
-        document.write(`Seu primeiro nome tem ${nome.length} e seu sobrenome tem ${sobrenome.length} letras.`)
-
-    </script>
+            document.write(`<h2>Boas-vindas, ${nome}!</h2>`)
+            document.write(`<strong>Nome completo:</strong> ${nome} ${sobrenome} <br/><br/>`)
+            document.write(`<strong>Nome do crachá:</strong> ${sobrenome.toUpperCase()} <br/><br/>`)
+            document.write(`Seu primeiro nome tem <strong>${nome.length}</strong> letras e seu sobrenome tem <strong>${sobrenome.length}</strong> letras.`)
+       </script>
+   </div>
 </body>
 </html>
