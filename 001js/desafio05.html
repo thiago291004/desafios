@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>O Simulador de Estágio</title>
+</head>
+<body>
+<script>
+        var nome = window.prompt('Qual o nome do candidato')
+        var salario = Number(window.prompt('Qual pretensão salarial'))
+        document.write(`OLÁ ${nome.toUpperCase()} ! <br/>`)
+        document.write(`O seu nome possui ${nome.length} letras. <br/>`)
+        document.write(`Seu e-mail corporativo será: 
+        ${nome.toLowerCase()}@empresa.com <br/>`)
+        document.write(`Salário esperado registrado: ${salario.toLocaleString('pt-BR', {style: 'currency', currency: 'BRL'})}`)
+
+    </script>
+    
+    
+</body>
+</html>
